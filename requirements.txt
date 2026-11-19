@@ -1,0 +1,6 @@
+requests>=2.31
+pyttsx3>=2.90
+# Optional extras:
+# vosk>=0.3.45        # offline voice input
+# sounddevice>=0.4.6  # microphone access for vosk
+# ddgs>=9.0           # web search (only if allow_web_search = true)
