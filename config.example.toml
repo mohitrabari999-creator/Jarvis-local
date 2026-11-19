@@ -1,0 +1,23 @@
+# Copy this file to config.toml and edit it. config.toml is git-ignored.
+
+[assistant]
+name = "Jarvis"
+user_name = "sir"
+model = "llama3.1:8b"            # any model you've pulled with `ollama pull`
+ollama_url = "http://localhost:11434"
+history_turns = 10               # how many back-and-forths to remember
+
+[voice]
+voice_output = true              # speak replies with pyttsx3
+voice_rate = 180
+voice_input = false              # use the microphone (needs Vosk, see README)
+vosk_model_path = "models/vosk-model-small-en-us-0.15"
+
+[internet]
+allow_web_search = false         # the ONLY feature that goes online
+
+# Your own app shortcuts: "what you say" = "command or full path"
+[apps]
+# "vs code" = "code"
+# "spotify" = "spotify"
+# "chrome" = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
